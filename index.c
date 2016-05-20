@@ -26,11 +26,9 @@
 
 #define MAX_RECORD_BLOCK         100 /* read & index 100 at a time */
 
-#ifdef NEW_STYLE_BIN_SORT
+/*--Erased the lines making reference to the define function----*/
 #define SORT_COMMAND "sort -o %s -k 5,5 -k 4,4n -t : %s"
-#else
-#define SORT_COMMAND "sort -o %s +4 +3 -t : %s "
-#endif
+
 
 /* ------------------------ Local Functions ------------------ */
 
